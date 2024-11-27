@@ -46,3 +46,10 @@
     text-decoration-line: line-through;
     text-decoration-thickness: 2px;
 }
+
+.logo >img {
+    width: 200px; /* Define a largura da logo */
+    height: 200px; /* Define a altura da logo */
+    border-radius: 50%; /* Arredonda a logo */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+}

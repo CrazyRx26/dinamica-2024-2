@@ -35,12 +35,12 @@
                 <td><%= task.description %></td>
                 <td><%= task.done == 1 ? "Sim" : "Não" %></td>
                 <td>
-                    <form action="/tasks/update-status/<%= task.id %>" method="POST" style="display: inline-block" onsubmit="return confirmar('Mudar status da tarefa?')">
+                    <form action="/tasks/update-status/<%= task.id %>" method="POST" style="display: inline-block" onsubmit="return confirmar('Mudar status do usuário?')">
                         <input type="hidden" name="done" value="<%= task.done %>">
                         <button type="submit" class="btn btn-warning">Status</button>
                     </form>
                     <a type="button" class="btn btn-success" href="/tasks/edit/<%= task.id %>">Editar</a>
-                    <form action="/tasks/remove/<%= task.id %>" method="POST" style="display: inline-block" onsubmit="return confirmar('Tem certeza que deseja excluir essa tarefa?')">
+                    <form action="/tasks/remove/<%= task.id %>" method="POST" style="display: inline-block" onsubmit="return confirmar('Tem certeza que deseja excluir este usuário?')">
                         <button type="submit" class="btn btn-danger">Excluir</button>
                     </form>
                 </td>
